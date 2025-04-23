@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report a Pothole</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Report a Pothole</h1>
+    <p>Use your voice or type to report a pothole.</p>
+  <h2>🎤 Report a Pothole</h2>
+
+  <!-- Voice input -->
+  <button onclick="startListening()">Start Speaking</button>
+
+  <!-- Text input -->
+  <p>Or type your message:</p>
+  <input type="text" id="text-input" placeholder="Type your report here..." />
+  <button onclick="sendTypedMessage()">Send</button>
+
+  <!-- Display sections -->
+  <p id="spoken-text"></p>
+  <p id="bot-reply"></p>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

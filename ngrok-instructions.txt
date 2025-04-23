@@ -1,0 +1,22 @@
+How to Make http://127.0.0.1:5000/ Publicly Accessible Using ngrok
+
+1. Download ngrok
+   Visit https://ngrok.com/download and download the version for your OS.
+   Unzip the file and place the ngrok executable somewhere accessible.
+
+2. Connect ngrok to your account (first time only)
+   Sign up on ngrok.com, go to your dashboard, and find your auth token.
+   Then run this command in your terminal (replace with your token):
+   ngrok config add-authtoken YOUR_AUTHTOKEN
+
+3. Start your Flask app
+   In your terminal, run:
+   python app.py
+
+4. In a new terminal window, run ngrok on port 5000:
+   ngrok http 5000
+
+5. Copy the public URL
+   ngrok will display a forwarding address like:
+   https://abcd1234.ngrok.io -> http://127.0.0.1:5000
+   Use this public URL to access your Flask app from any device.

@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  h1, h2, p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  button, input[type="text"] {
+    font-size: 1.4rem;
+    padding: 14px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  #spoken-text, #bot-reply {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+}

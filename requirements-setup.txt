@@ -1,0 +1,41 @@
+How to Set Up Required Packages for the Pothole Reporter Chatbot
+
+Step 1: (Optional but recommended) Create and activate a virtual environment:
+
+  python -m venv venv
+
+  On Windows:
+    venv\Scripts\activate
+
+  On Mac/Linux:
+    source venv/bin/activate
+
+
+Step 2: Install the required Python packages:
+
+  pip install flask openai
+
+
+Step 3: Set up your OpenAI API key:
+
+  - In the file named `apikey.py` in the same folder as `app.py`. Fill in your OpenAI API key.
+
+      OPENAI_API_KEY = "sk-..."
+  (Notes:  How to Get Your OpenAI API Key
+  1.Go to: https://platform.openai.com/account/api-keys
+
+  2.Log in or create an OpenAI account.
+
+  3.Click the "Create new secret key" button.
+
+  4.Copy the key that starts with sk-....)
+
+  (Never share this key publicly. Keep `apikey.py` private.)
+
+
+
+That's it! You’re now ready to run the app:
+  
+  python app.py
+
+Then open: http://127.0.0.1:5000/ in your browser
